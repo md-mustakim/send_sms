@@ -1,0 +1,8 @@
+CREATE TABLE `sms_data`.`number_list` ( 
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+    `name` VARCHAR(50) NOT NULL ,
+    `number_1` INT(15) NOT NULL , 
+    `number_2` INT(15) NOT NULL ,
+    `group_id` INT NOT NULL ,
+    FOREIGN KEY (group_id) REFERENCES number_group(group_id)    
+  )
